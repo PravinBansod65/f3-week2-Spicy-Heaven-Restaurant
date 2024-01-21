@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+  background: black;
+  color: white;
+  transition: all 0.6s cubic-bezier(.22,.68,0,1.71);
+  /* overflow-x: hidden !important; */
+}
+
+body {
+  overflow-x: hidden;
+  /* max-width: 200vh; */
+}
+
+.main-container {
+  /* width: 100vh; */
+  /* display: grid; */
+  /* grid-template-columns: 18vw 82vw; */
+}
+
+.sideWalaBar {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-evenly;
+  height: 100vh;
+  width: 20vw;
+  /* border: 2px solid rgb(49, 47, 47); */
+  position: fixed;
+  z-index: 1000;
+}
+
+.sideWalaBar img {
+  width: 150px;
+}
+
+.sideWalaBar .logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 600;
+  /* line-height: 36px; */
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.slogan {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 300;
+  /* line-height: 30px; */
+  letter-spacing: 0em;
+  text-align: left;
+  color: red;
+}
+
+.link-heading {
+  /* width: 22vw; */
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+}
+
+.sideWalaBar h3 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  /* line-height: 36px; */
+  margin-top: 10px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.sideWalaBar ol {
+  margin: 0 15%;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8em;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+ol a {
+  text-decoration: none;
+  color: white;
+}
+
+/* -----//////////////        nav done          ////////////////////////// */
+
+/* main wala item========--------------- */
+
+.apna_main_item {
+  margin-left: 20vw;
+  background: black;
+  width: 80vw;
+  /* height: 400vh; */
+  /* overflow-y: scroll; */
+}
+
+.header1 {
+  display: flex;
+  justify-content: space-between;
+  background: #191d20;
+  padding: 15px;
+  height: 10vh;
+}
+
+.searchbar {
+  /* height: 7vh; */
+  width: 60%;
+  display: inline;
+  background: transparent;
+}
+.header1 img {
+  width: 40px;
+  margin-right: 10px;
+}
+.header1 .btn {
+  width: 154px;
+}
+
+.searchbar i {
+  display: inline;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background:#343A40; */
+  color: rgb(135, 126, 126);
+  padding: 5px;
+  background: transparent;
+  padding-inline: 8px;
+}
+
+/* header wala done */
+
+.hero img {
+  width: 99%;
+  padding: 15px;
+  /* height: 50vh; */
+}
+.hero {
+  /* width: 80%; */
+  padding: 15px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.menu-name {
+  margin-left: 3em;
+}
+.menu-name a {
+  color: white;
+}
+.menu-name a:hover {
+  text-decoration: none;
+  color: yellow;
+  font-size:26px ;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background: transparent !important;
+  /* background: #191D20; */
+  /* padding: 40px; */
+  border-radius: 20px !important;
+  padding-bottom: 0;
+  /* width: 30vw; */
+}
+
+.card img {
+  height: 190px;
+  width: 260px;
+  margin-bottom: 15px;
+  /* padding-bottom: 16px; */
+  border-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.cards {
+  /* background: #191D20; */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: transparent !important;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0 auto !important;
+}
+
+.cards a i {
+  font-size: 45px;
+  color: #7a7878 !important;
+}
+
+.cards a i:hover {
+  font-size: 45px;
+  background: rgb(0, 255, 0);
+  color: red;
+  transform: scale(0.7);
+}
+
+.card * {
+  background-color: rgb(53, 52, 52);
+  /* border-radius: ; */
+}
+
+.card span {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.card-1 img:hover{
+    box-shadow: 0px 0px 20px 1px #ffbb763f;
+    border: 1px solid rgba(255, 255, 255, 0.454);
+    transform: scale(1.06);
+}
+
+/* -------------/////////media///////////////////// */
+
+@media screen and (max-width: 768px) {
+  .sideWalaBar .logo {
+    font-size: 20px;
+  }
+
+  .card-1 {
+    width: 100%;
+    /* display: flex; */
+    /* align-items: center; */
+    justify-content: center;
+  }
+  .card-1 img {
+    width: 100%;
+    height: 70%;
+  }
+  .paddingwaladabba span {
+    margin-top: 32px;
+  }
+}
+
+/* /////////////// 768px end ------------------ */
+
+@media screen and (max-width: 440px) {
+  .sideWalaBar {
+    width: 30vw;
+  }
+  .paddingwaladabba {
+    padding: 0 !important;
+  }
+
+  .paddingwaladabba span {
+    margin-top: 0;
+  }
+  .sideWalaBar img {
+    width: 100px;
+    margin-top: 30px;
+  }
+  .apna_main_item {
+    margin-left: 30vw;
+    background: black;
+    width: 69vw;
+    height: 200vh;
+    /* overflow-y: scroll; */
+  }
+
+  .btn {
+    font-size: 10px !important;
+    padding: 1px 1px !important;
+    width: 50px !important;
+  }
+
+  .searchbar input {
+    font-size: 13px !important;
+    height: 100% !important;
+  }
+
+  .searchbar i {
+    font-size: 1em;
+  }
+  .header1 img {
+    width: 30px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sideWalaBar .logo {
+    font-size: 15px;
+    /* line-height: 36px; */
+  }
+
+  .slogan {
+    font-size: 10px;
+    /* line-height: 30px; */
+  }
+  .sideWalaBar ol {
+    margin: 0 15%;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4em;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .sideWalaBar h3 {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 36px;
+    /* margin-top: 10px; */
+    line-height: 2px;
+    letter-spacing: 0em;
+    text-align: left;
+    /* gap:20px; */
+  }
+  .sideWalaBar {
+    justify-content: space-around;
+    height: 80vh;
+    gap: 10px;
+  }
+}
+
+/* small size end mobile and so ON */
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(0deg, rgb(172, 166, 166) 0%, rgb(77, 67, 77) 100%);
+    border-radius: 100px;
+  }
